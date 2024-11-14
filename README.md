@@ -65,7 +65,7 @@ Execute the playbook to configure the VM:
 
 ```bash
 ansible-playbook -i hosts playbook.yml
-
+```
 This command will use the hosts inventory file to define the target VM and execute the tasks specified in the playbook.yml file to install and configure the necessary software.
 
 ## Verification
@@ -83,7 +83,7 @@ To delete the resources created by Terraform, run the following command in the T
 
 ```bash
 terraform destroy
-
+```
 
 You will be prompted to confirm the destruction of the resources. Type yes to remove all created resources.
 
@@ -113,7 +113,7 @@ gcp-with-terraform-ansible/
 └── terraform/
     ├── main.tf
     └── vm_instance.tf
-
+```
 
 ##  Additional Resources
 
