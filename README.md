@@ -57,14 +57,13 @@ Example `hosts` file:
 terraform-instance ansible_host=<instance_ip> ansible_user=your-username ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 
-# Setting Up and Managing GCP VM with Terraform and Ansible
 
-## Run the Ansible Playbook
-
-Execute the playbook to configure the VM:
-   ```bash
-   ansible-playbook -i hosts playbook.yml
-   ```
+2. **Run the Ansible Playbook**
+ 
+   - Execute the playbook to configure the VM:
+     ```bash
+     ansible-playbook -i hosts playbook.yml
+     ```
 
 
 This command will use the hosts inventory file to define the target VM and execute the tasks specified in the playbook.yml file to install and configure the necessary software.
