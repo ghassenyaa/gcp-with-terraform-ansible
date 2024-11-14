@@ -1,0 +1,4 @@
+# State files
+*.tfstate
+*.tfstate.*
+.terraform*/

@@ -1,0 +1,26 @@
+---
+- name: Install packages on GCP instance
+  hosts: gcp_instances
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install required packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - nginx
+        - python3
+        - pip
+        - git
+        # Add more packages as needed
+
+    - name: Start and enable nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
