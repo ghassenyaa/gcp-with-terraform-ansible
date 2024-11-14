@@ -62,10 +62,11 @@ terraform-instance ansible_host=<instance_ip> ansible_user=your-username ansible
 ## Run the Ansible Playbook
 
 Execute the playbook to configure the VM:
+   ```bash
+   ansible-playbook -i hosts playbook.yml
+   ```
 
-```bash
-ansible-playbook -i hosts playbook.yml
-```
+
 This command will use the hosts inventory file to define the target VM and execute the tasks specified in the playbook.yml file to install and configure the necessary software.
 
 ## Verification
