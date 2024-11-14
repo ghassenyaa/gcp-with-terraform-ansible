@@ -46,10 +46,10 @@ This guide explains how to set up a virtual machine on Google Cloud Platform (GC
    ```bash
    cd path/to/ansible
 
-## Update the Inventory File (`hosts`)
+2. **Update the Inventory File (`hosts`)**
 
-1. Replace `${instance_ip}` with the IP address output by Terraform.
-2. Replace `"your-username"` with your local username.
+ . Replace `${instance_ip}` with the IP address output by Terraform.
+ . Replace `"your-username"` with your local username.
 
 Example `hosts` file:
 ```ini
@@ -58,7 +58,7 @@ terraform-instance ansible_host=<instance_ip> ansible_user=your-username ansible
 
 
 
-2. **Run the Ansible Playbook**
+3. **Run the Ansible Playbook**
  
    - Execute the playbook to configure the VM:
      ```bash
